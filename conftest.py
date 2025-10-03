@@ -19,10 +19,10 @@ def api():
 
 @pytest.fixture
 def auth_page(driver):
-    from UI_pages.AuthorizationPage import Authorization
+    from pages.auth_page import Authorization
     return Authorization(driver)
 
 @pytest.fixture
 def search_page(driver):
-    from UI_pages.Search_UI_page import Search
+    from pages.ui_search_page import Search
     return Search(driver)
